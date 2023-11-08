@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Montserrat 800 */
+@font-face {
+    font-family: "Montserrat-800";
+    src: url("./components/Assets/fonts/montserrat/Montserrat-ExtraBold.ttf") format(truetype);
+}
+
+/* Montserrat 500 */
+@font-face {
+    font-family: "Montserrat-500";
+    src: url("./components/Assets/fonts/montserrat/Montserrat-Medium.ttf") format(truetype);
+}
+
+/* Montserrat 600 */
+@font-face {
+    font-family: "Montserrat-600";
+    src: url("./components/Assets/fonts/montserrat/Montserrat-SemiBold.ttf") format(truetype);
+}
+
+/* Inter 400 */
+@font-face {
+    font-family: "Inter-400";
+    src: url("./components/Assets/fonts/inter/Inter-Regular.ttf") format(truetype);
+}
+
+/* inter 600 */
+@font-face {
+    font-family: "Inter-600";
+    src: url("./components/Assets/fonts/inter/Inter-SemiBold.ttf") format(truetype);
+}
+
+/* inter 700 */
+@font-face {
+    font-family: "Inter-700";
+    src: url("./components/Assets/fonts/inter/Inter-Bold.ttf") format(truetype);
+}
+
+/* inter 800 */
+@font-face {
+    font-family: "Inter-800";
+    src: url("./components/Assets/fonts/inter/Inter-ExtraBold.ttf") format(truetype);
+}
+
+/* SF Pro Display 400 */
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("./components/Assets/fonts/sf-display/SFPRODISPLAYREGULAR.OTF") format(opentype);
+}
+
+.body{
+    background-color: #F4F5F6;
+}
+
+.container{
+    max-width: 1640px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1919.9px) and (min-width: 0px){
+    .container{
+        width: 87%;
+    }
+}
+    

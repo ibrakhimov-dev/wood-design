@@ -1,0 +1,325 @@
+.navbar{
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+    height: 121px;
+}
+
+.navbar-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.navbar-logo{
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 18.5px;
+}
+
+.logo img{
+    width: 69.5px;
+}
+
+.logo-name p:nth-child(1) {
+    color: #0F2E4A;
+    font-family: "Montserrat-800", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -1.8px; 
+}
+
+.logo-name p:nth-child(2) {
+    color: #C35815;
+    font-family: "Inter-400", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 16px;
+    margin-top: -10px;
+}
+
+.navbar-menu{
+    width: 69%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.menu ul li{
+    list-style-type: none;
+}
+
+.menu ul li:nth-child(1) {
+    margin-right: 30px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #0F2E4A;
+    font-family: "Inter-600", sans-serif;
+    font-size: 13px;
+    position: relative;
+    font-style: normal;
+    line-height: normal; 
+}
+
+.menu ul li a i{
+    margin-right: 11px;
+    color: #C35815;
+    font-size: 14px;
+}
+
+.navbar-contact{
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+    align-items: center;
+}
+
+.menu-contact{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+}
+
+.menu-contact-icon i{
+   font-size: 28px;
+   color: #C35815;
+}
+
+.menu-contact-info p:nth-child(1){
+    color: #0F2E4A;
+    font-family: "Montserrat-500", sans-serif;
+    font-size: 12px;
+    opacity: 0.5;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.menu-contact-info p:nth-child(2){
+    color: #0F2E4A;
+    font-family: "Montserrat-600", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.menu-contact-info:hover.menu-contact-info p:nth-child(2){
+    color: #C35815;
+}
+
+.menu ul li a::after{
+    position: absolute;
+    content: "";
+    background: #C35815;
+    bottom: -5px;
+    border-radius: 2px;
+    left: 60%;
+    width: 0%;
+    height: 3px;
+    display: none;
+}
+
+@keyframes menu{
+    to{
+        width: 100%;
+        left: 0;
+    }
+}
+
+.menu ul li a:hover::after{
+    display: block;
+    animation: menu 0.5s ease-in-out forwards;
+}
+
+.responsive-menu{
+    display: none;
+    position: relative;
+    z-index: 1;
+
+}
+
+.menu-phone{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 250px;
+    background-color: black;
+    padding: 40px 0 20px;
+    border-radius: 5px;
+    z-index: -1;
+    display: none;
+}
+
+.click-btn-menu{
+    width: 40px;
+    outline: none;
+    height: 40px;
+    background-color: #C35815;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(205, 137, 0, 0.34);
+}
+
+.menu-phone li{
+    margin-top: 1rem;
+    list-style-type: none;
+    margin-left: 1rem;
+}
+
+.menu-phone li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    position: relative;
+    font-family: "Inter-600", sans-serif;
+    font-size: 13px;
+    position: relative;
+    font-style: normal;
+    line-height: normal; 
+}
+
+.menu-phone li a i{
+    color: #C35815;
+}
+
+.menu-phone li a:hover::after{
+    display: block;
+    animation: menu-phone 0.5s ease-in-out forwards;
+}
+
+.menu-phone li a::after{
+    position: absolute;
+    content: "";
+    background: #C35815;
+    bottom: -5px;
+    border-radius: 2px;
+    left: 60%;
+    width: 0%;
+    height: 3px;
+    display: none;
+}
+
+@keyframes menu-phone{
+    to{
+        width: 150px;
+        left: 0;
+    }
+}
+
+.menu-contact-icon{
+    position: relative;
+}
+
+.menu-contact-info-responsive{
+    position: absolute;
+    z-index: 222;
+    right: 0%;
+    top: 40px;
+    display: none;
+    width: 150px;
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px 0 5px 5px;
+}
+
+.menu-contact-info-responsive p:nth-child(1){
+    color: white;
+    font-family: "Montserrat-500", sans-serif;
+    font-size: 11px;
+    opacity: 0.5;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; 
+}
+
+.menu-contact-info-responsive p:nth-child(2){
+    color: white;
+    font-family: "Montserrat-600", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+@media screen and (max-width: 1350px) and (min-width: 0px) {
+    .menu-contact-info{
+        display: none;
+    }
+    .menu-contact-icon:hover .menu-contact-info-responsive{
+        display: block;
+    }
+    .navbar-menu{
+        gap: 1rem;
+        justify-content: flex-end;
+    }  
+    .menu-contact-icon i{
+        font-size: 20px;
+    }  
+}
+
+@media screen and (max-width: 992px) and (min-width: 0px) {
+    .navbar{
+        height: 90px;
+    }
+
+    .logo img{
+        width: 45px;
+    }
+    .logo-name p:nth-child(1){
+        font-size: 25px;
+    }
+    .logo-name p:nth-child(2){
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 776px) and (min-width: 0px){
+    .menu{
+        display: none;
+    }
+    .responsive-menu{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 400px) and (min-width: 0px){
+    .logo img{
+        width: 35px;
+    }
+    .logo-name p:nth-child(1){
+        font-size: 20px;
+    }
+    .logo-name p:nth-child(2){
+        font-size: 8px;
+    }
+    .menu-contact-icon i{
+        font-size: 18px;
+    }
+    .click-btn-menu{
+        width: 35px;
+        height: 35px;
+    }  
+    .navbar-logo{
+        gap: 10px;
+    }
+}
+
+

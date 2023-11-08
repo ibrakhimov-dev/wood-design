@@ -1,0 +1,61 @@
+footer{
+    width: 100%;
+}
+
+.footer-content{
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-menu ul{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-menu ul li {
+    list-style-type: none;
+}
+
+.footer-menu ul li a{
+    text-decoration: none;
+    color: #0F2E4A;
+    font-family: "SF Pro Display", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-menu ul li a:hover {
+    color: #C35815;
+}
+
+.author a{
+    text-decoration: none;
+    color: #0F2E4A;
+    font-family: "SF Pro Display", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.author a .author-span{
+    color: #0F2E4A;
+    font-family: "SF Pro Display", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -0.36px; 
+}
+
+.author a:hover .author-span{
+    color: #C35815;
+}

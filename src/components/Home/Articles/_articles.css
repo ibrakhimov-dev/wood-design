@@ -1,0 +1,103 @@
+.articles{
+    width: 100%;
+    height: auto;
+}
+
+.articles-content{
+    padding: 20px 0;
+    width: 100%;
+}
+
+.articles-content h4{
+    color: #0F2E4A;
+    text-align: center;
+    font-family: "Inter-800", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal; 
+}
+
+.articles-cards {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.articles-card-item{
+    width: 24%;
+    margin-top: 20px;
+    padding: 40px 30px;
+}
+
+.articles-icon{
+    width: 83px;
+    height: 83px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.articles-card-item p:nth-child(2){
+    color: #0F2E4A;
+    font-family: 'Inter-700', sans-serif;
+    font-size: 22px;
+    margin-top: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+}
+
+.articles-card-item p:nth-child(3) {
+    color: #0F2E4A;
+    font-family: "SF Pro Display", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 7px;
+    line-height: 19px;
+}
+
+.articles-card-item:hover{
+    border-radius: 12px;
+    background: #FFF;
+    transition: 0.5s;
+    box-shadow: 10px 20px 60px -10px rgba(32, 51, 79, 0.20);
+}
+
+.icon-one{
+    background-color: #F8E0DB;
+}
+
+.icon-two{
+    background-color: #BECEDE;
+}
+
+.icon-three{
+    background-color: #F1E5D4;
+}
+
+.icon-four{
+    background-color: #C2E7EA;
+}
+
+@media screen and (max-width: 992px) and (min-width: 0px) {
+   .articles-card-item{
+    width: 32%;
+   } 
+}
+
+@media screen and (max-width: 776px) and (min-width: 0px) {
+    .articles-card-item{
+     width: 49%;
+    } 
+ }
+
+ @media screen and (max-width: 540px) and (min-width: 0px) {
+    .articles-card-item{
+     width: 100%;
+    } 
+ }
